@@ -22,13 +22,10 @@
 # 123456에 7은 없으므로 -1을 return 합니다.
 
 def solution(num, k):
-    # num을 문자열로 변환
     str_num = str(num)
 
-    # 문자열에서 각 문자를 하나씩 확인
     for i in range(len(str_num)):
         if str_num[i] == str(k):
-            return i + 1  # 위치는 0부터 시작하므로, 1을 더해줌
+            return i + 1
 
-    # k가 문자열 내에 없으면 -1 반환
     return -1
