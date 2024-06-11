@@ -2,9 +2,9 @@
 
 def solution(n, k):
     answer = []
-    for i in range(1,k):
-        answer.append(k)
-        while n >= k:
-            k = i * k
-            break
+    j = k
+    for i in range(1,n+1):
+        k = i * j
+        if n >= k:
+            answer.append(k)
     return answer
